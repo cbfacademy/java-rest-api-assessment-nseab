@@ -11,14 +11,25 @@ public class WeatherService {
 		@Autowired
 		WeatherRepository weatherRepository;
 		
+		//READ
 		public List<Weather> getAll() {
-		return weatherRepository.getAll();
+		return weatherRepository.getWeather();
 		}
 		
+		//CREATE
 		public String add(Weather weather) {	
 			weatherRepository.add(weather);
 			return "successfully added";
 		}
+		
+		//RETRIEVE
+		public Weather getWeatherByCityId() {
+			weatherRepository.getWeatherByCityId();
+			return null;
+		}
+
+		
+		//
 
 }
 

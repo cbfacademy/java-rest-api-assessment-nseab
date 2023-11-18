@@ -9,14 +9,24 @@ import org.springframework.stereotype.Repository;
 	public class WeatherRepository {
 	
 		
-	public List<Weather> weather = new ArrayList<Weather>();
-
-	public List<Weather> getAll() {
+	private List<Weather> weather = new ArrayList<Weather>();
+	
+	
+	
+	public List<Weather> getWeather() {
 		return weather;
 	}
 
-	public String add(Weather weather) {
+	public boolean add(Weather weather) {
 		this.weather.add(weather);
-		return "successfully added";
+		return "successfully added" != null;
 	}
+
+	public void getWeatherByCityId() {
+		
+		
+	}
+
+			
+	
 }
