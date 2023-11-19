@@ -25,11 +25,9 @@ public class WeatherService {
 		//RETRIEVE
 		public Weather getWeatherByCityId() {
 			weatherRepository.getWeatherByCityId();
-			return null;
+			return getWeatherByCityId();
 		}
 
-		
-		//
 
 }
 
